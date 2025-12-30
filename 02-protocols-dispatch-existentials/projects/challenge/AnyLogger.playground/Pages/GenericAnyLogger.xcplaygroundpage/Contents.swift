@@ -33,15 +33,15 @@
 import Foundation
 
 struct AnyLogger<Message>: Logger {
-    private let _log: (Message) -> Void
-
-    init<L: Logger>(_ logger: L) where L.Message == Message {
-        self._log = logger.log
-    }
-
-    func log(_ message: Message) {
-        _log(message)
-    }
+  private let _log: (Message) -> Void
+  
+  init<L: Logger>(_ logger: L) where L.Message == Message {
+    self._log = logger.log
+  }
+  
+  func log(_ message: Message) {
+    _log(message)
+  }
 }
 
 // Usage
@@ -53,5 +53,5 @@ let anyFile = AnyLogger(fileLogger)
 
 let loggers: [AnyLogger<String>] = [anyConsole, anyFile]
 for logger in loggers {
-    logger.log("Hello!")
+  logger.log("Hello!")
 }
