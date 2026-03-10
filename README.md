@@ -1,6 +1,6 @@
-# Swift Mechanics: Materials
+# Swift Internals: Materials
 
-This repo contains all the downloadable materials and projects associated with the **[Swift Mechanics](https://www.kodeco.com/books)** from [Kodeco](https://www.kodeco.com).
+This repo contains all the downloadable materials and projects associated with the **[Swift Internals](https://www.kodeco.com/books)** from [Kodeco](https://www.kodeco.com).
 
 Each edition has its own branch, named `editions/[EDITION]`. The default branch for this repo is for the most recent edition.
 
